@@ -1,0 +1,13 @@
+JavaJavaScrip can be very good or very bad. It depends how you percieve it and how you learn.
+It is also known as ECMA JavaScript
+Started in 1995. No similarity with JAVA
+ES6 is the most stable version and ES8 is the current version.
+
+JS is a synchronus (line by line) and single-threaded (specific order) language.
+
+JavaScript was used to write program in web pages.
+
+First browser to be compatible with JS was Netscape -> Navigator browser
+
+JS used to run only on browser so NodeJS was created.
+Using NodeJS JS files can run in normal laptop termina also.
