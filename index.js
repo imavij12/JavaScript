@@ -71,3 +71,12 @@ console.log(a);
 // while using let we can reinitiate but we can not re-declare
 l = "Hello";
 console.log(l);
+
+//const keyword is used
+const n = 2;
+console.log(n);
+
+// neither redeclare nor re-initialize
+// const n=5;
+n=4; //TypeError: Assignment to constant variable.
+console.log("hey");
