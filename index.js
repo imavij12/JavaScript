@@ -1,3 +1,4 @@
+{
 // starting JavaScript
 // var let const
 
@@ -53,7 +54,7 @@ console.log(`Half of ${num} is ${num/2}`);
 
 
 //var has som problems
-// 1) variable can be declared
+// 1) variable can be re-declared
 
 var a = 100;
 console.log(a);
@@ -62,11 +63,11 @@ var a = "Hello";
 console.log(a);
 
 //let keyword is used
-let l = 100;
-console.log(a);
+let l = 10;
+console.log(l);
 
 // let l = "Hello"; //SyntaxError: Identifier 'a' has already been declared
-// console.log(a);
+// console.log(l);
 
 // while using let we can reinitiate but we can not re-declare
 l = "Hello";
@@ -80,3 +81,48 @@ console.log(n);
 // const n=5;
 n=4; //TypeError: Assignment to constant variable.
 console.log("hey");
+
+
+
+ //loops in JS
+ var num = 10;
+
+ // for (var i = 0; i < num; i++){
+ //     if (i % 2 == 0) {
+ //         console.log("num is even");
+ //     }
+ // }
+
+ // 2nd problem with var keyword
+ // var keyword is function scoped in case of function else it is global scope
+ // let keyword is block scoped
+
+ let j = 20;
+ for (var i = 0; i < num; i++) {
+   let j = 20;
+   if (i % 2 == 0) {
+     let hello = 1000;
+     console.log(i);
+     console.log(hello);
+   }
+
+   console.log("inner" + j);
+ }
+ console.log("outer " + j);
+ console.log(`value of i is " ${i}`);
+ //console.log(hello); // error dega hello is not defined
+
+ // {
+
+ //     //this space between opening and closing of curly braces is a block
+ // }
+
+
+ let a1 = 10;
+ for (var i = 0; i <= 0; i++) {
+   console.log(`i=${i}`);
+   console.log(a1);
+   let a1 = 90;
+   console.log(a1);
+ } //Sir iss code me error bol raha a1 needs to initialized first. WHY??
+}
