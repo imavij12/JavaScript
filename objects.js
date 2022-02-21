@@ -40,19 +40,28 @@ let captainAmerica = {
 
 console.log(captainAmerica);
 console.log(captainAmerica.friends);
-console.log(captainAmerica.friends[0]);
+console.log(captainAmerica.friends[0]); 
+console.log("printed using bracket notation "+captainAmerica["friends"][0]);
 captainAmerica.sayHi(); //method accessing 
+//nested objects 
+console.log(captainAmerica.address.city); 
 
 //for loop 
 // in keyword in JS is used to get keys from that object
 for (let haathi in captainAmerica) {
     //key
-    console.log(`${haathi} : ${captainAmerica[haathi]}`);
+    console.log(haathi);
     // hathi jo varibale h uske andar meri key ki value padi hui h 
     //value
     // varibale ke andar jo binded value h wo chahiye 
-    //console.log(captainAmerica[haathi]); //bracket notation usage
+    console.log(captainAmerica[haathi]); //bracket notation usage
 }
+
+console.log(typeof captainAmerica.friends);
+
+//deleteing the key of an object
+delete captainAmerica.lastName;
+console.log(captainAmerica.lastName);
 
 
 
@@ -65,7 +74,15 @@ for (let haathi in captainAmerica) {
 // }
 
 
+let car = {
+    name: "Ferrari",
+    model: 2022,
+    startEngine: function () {
+        console.log(`Starting the engine of the car ${this.name}`)
+    }
+}
 
+car.startEngine();
 
 
 // methods-> objects ke andar function
