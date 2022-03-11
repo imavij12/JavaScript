@@ -8,7 +8,6 @@ var b = 10;
 outer();
 console.log(b);
 
-
 /*scope:
 where can this variable/function be accesed in the code 
                             OR 
